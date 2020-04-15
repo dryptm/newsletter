@@ -29,15 +29,14 @@ app.post("/",function(req,res)
             }
         ]
     }
-    
+    const audience_id;
     const jsondata= JSON.stringify(data);
-    const url="https://us19.api.mailchimp.com/3.0/lists/fb6935c355";
-    //6f62868ad1f040bb7bf080166c6794c3-us19
-    //fb6935c355
+    const url="https://us19.api.mailchimp.com/3.0/lists/"+audience_id;
     
+    const api;
     const options={
         method:"POST",
-        auth:"vinay:6f62868ad1f040bb7bf080166c6794c3-us19"
+        auth:"vinay:"+api;
     }
     const request =https.request(url,options,function(response){
         if (response.statusCode===200)
